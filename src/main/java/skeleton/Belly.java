@@ -6,6 +6,6 @@ public class Belly {
     }
     
     public void wait(int hour) {
-        System.out.println("Im waiting "+hour"+ hours for digestion");
+        System.out.println("Im waiting "+hour+" hours for digestion");
     }
 }
