@@ -2,6 +2,7 @@ package skeleton;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
+import cucumber.api.java.en.Then;
 
 public class Stepdefs {
     @Given("^I have (\\d+) cukes in my belly$")
@@ -14,5 +15,11 @@ public class Stepdefs {
     public void I_wait_hour(int hour) throws Throwable {
         Belly belly = new Belly();
         belly.wait(hour);
+    }
+    
+    @Then("^my belly should growl$")
+    public void my_belly_should_growl() throws Throwable {
+        Belly belly = new Belly();
+        belly.then();
     }
 }
