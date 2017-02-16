@@ -10,6 +10,6 @@ public class Belly {
     }
     
     public void then() {
-        system.out.println("My Belly should growl");
+        System.out.println("My Belly should growl");
     }    
 }
