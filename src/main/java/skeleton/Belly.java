@@ -8,4 +8,8 @@ public class Belly {
     public void wait(int hour) {
         System.out.println("Im waiting "+hour+" hours for digestion");
     }
+    
+    public void then() {
+        system.out.println("My Belly should growl");
+    }    
 }
