@@ -10,7 +10,7 @@ public class Stepdefs {
         Belly belly = new Belly();
         belly.eat(cukes);    */
     
-    Given(/^I am on the home page$/) do
+    @Given("/^I am on the home page$/") do
          visit "http://34.249.86.158:8181/hello/"
         end
     
@@ -20,7 +20,7 @@ public class Stepdefs {
         Belly belly = new Belly();
         belly.wait(hour);  */
 
-    When(/^I click JSP page$/) do
+    @When("/^I click JSP page$/") do
          find_link("JSP page").click
         end
    
@@ -30,7 +30,7 @@ public class Stepdefs {
         Belly belly = new Belly();
         belly.then();  */
 
-      Then(/^I should see the title "(.*?)"$/) do |title|
+      @Then("/^I should see the title "(.*?)"$/") do |title|
           expect(page).to have_title(title)
    
 }
